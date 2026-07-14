@@ -1,0 +1,109 @@
+[
+    {
+        "page": 1,
+        "sections": [
+            {
+                "figure_number": 1,
+                "label": "Misc",
+                "continuation": false,
+                "images": [
+                    "20260311_104939671_iOS.jpg",
+                    "20260311_104944313_iOS.jpg"
+                ],
+                "image_count": 2
+            },
+            {
+                "figure_number": 2,
+                "label": "Bushing",
+                "continuation": false,
+                "images": [
+                    "20260311_104927688_iOS.jpg",
+                    "20260311_104933652_iOS.jpg"
+                ],
+                "image_count": 2
+            }
+        ]
+    },
+    {
+        "page": 2,
+        "sections": [
+            {
+                "figure_number": 2,
+                "label": "Bushing",
+                "continuation": true,
+                "images": [
+                    "IMG_6683.JPG",
+                    "IMG_6684.JPG",
+                    "IMG_6685.JPG",
+                    "IMG_6686.JPG"
+                ],
+                "image_count": 4
+            }
+        ]
+    },
+    {
+        "page": 3,
+        "sections": [
+            {
+                "figure_number": 2,
+                "label": "Bushing",
+                "continuation": true,
+                "images": [
+                    "IMG_6687.JPG",
+                    "IMG_8129.JPG",
+                    "IMG_8130.JPG",
+                    "IMG_8131.JPG"
+                ],
+                "image_count": 4
+            }
+        ]
+    },
+    {
+        "page": 4,
+        "sections": [
+            {
+                "figure_number": 2,
+                "label": "Bushing",
+                "continuation": true,
+                "images": [
+                    "IMG_8132.JPG",
+                    "IMG_8133.JPG",
+                    "IMG_8134.JPG",
+                    "IMG_8135.JPG"
+                ],
+                "image_count": 4
+            }
+        ]
+    },
+    {
+        "page": 5,
+        "sections": [
+            {
+                "figure_number": 2,
+                "label": "Bushing",
+                "continuation": true,
+                "images": [
+                    "IMG_8136.JPG",
+                    "IMG_8137.JPG",
+                    "IMG_8138.JPG",
+                    "IMG_8139.JPG"
+                ],
+                "image_count": 4
+            }
+        ]
+    },
+    {
+        "page": 6,
+        "sections": [
+            {
+                "figure_number": 2,
+                "label": "Bushing",
+                "continuation": true,
+                "images": [
+                    "IMG_8140.JPG"
+                ],
+                "image_count": 1
+            }
+        ]
+    }
+]
