@@ -1,0 +1,7 @@
+myenv/
+
+__pycache__/
+*.pyc
+
+images/labels.json
+images/report_structure.json
