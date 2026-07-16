@@ -2,13 +2,41 @@ from pathlib import Path
 import subprocess
 import sys
 
-
 ROOT_DIR = Path(
     __file__
 ).resolve().parent.parent
 
 
-def run_python_script(script_name):
+def run_gui_script(
+    script_name,
+    project_folder
+):
+
+    script_path = (
+        ROOT_DIR /
+        script_name
+    )
+
+    if not script_path.exists():
+
+        raise FileNotFoundError(
+            f"Script not found:\n{script_path}"
+        )
+
+    subprocess.Popen(
+        [
+            sys.executable,
+            str(script_path),
+            str(project_folder)
+        ],
+        cwd=str(ROOT_DIR)
+    )
+
+
+def run_batch_script(
+    script_name,
+    project_folder
+):
 
     script_path = (
         ROOT_DIR /
@@ -24,79 +52,55 @@ def run_python_script(script_name):
     result = subprocess.run(
         [
             sys.executable,
-            str(script_path)
+            str(script_path),
+            str(project_folder)
         ],
         cwd=str(ROOT_DIR),
-        capture_output=True,
         text=True
     )
 
     if result.returncode != 0:
 
         raise RuntimeError(
-            result.stderr
+            f"{script_name} failed."
         )
 
-    return result.stdout
 
+def run_labeler(project_folder):
 
-def run_labeler():
-
-    return run_python_script(
-        "labeler.py"
+    run_gui_script(
+        "labeler.py",
+        project_folder
     )
 
 
-def run_review():
+def run_review(project_folder):
 
-    return run_python_script(
-        "review_labels.py"
+    run_gui_script(
+        "review_labels.py",
+        project_folder
     )
 
 
-def run_order():
+def run_order(project_folder):
 
-    return run_python_script(
-        "label_order.py"
+    run_batch_script(
+        "label_order.py",
+        project_folder
     )
 
 
-def run_page_plan():
+def run_page_plan(project_folder):
 
-    return run_python_script(
-        "page_planner.py"
+    run_batch_script(
+        "page_planner.py",
+        project_folder
     )
 
 
-def run_export():
+def run_export(project_folder):
 
-    return run_python_script(
-        "export_excel_v4.py"
+    run_batch_script(
+        "export_excel_v4.py",
+        project_folder
     )
-
-
-def run_full_pipeline():
-
-    logs = []
-
-    logs.append(
-        run_labeler()
-    )
-
-    logs.append(
-        run_review()
-    )
-
-    logs.append(
-        run_order()
-    )
-
-    logs.append(
-        run_page_plan()
-    )
-
-    logs.append(
-        run_export()
-    )
-
-    return "\n".join(logs)

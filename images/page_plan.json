@@ -4,23 +4,19 @@
         "sections": [
             {
                 "figure_number": 1,
-                "label": "Tank Construction",
+                "label": "Grounder",
                 "continuation": false,
                 "images": [
-                    "IMG_6367.JPG",
-                    "IMG_6368.JPG",
-                    "IMG_6369.JPG"
-                ],
-                "image_count": 3
+                    "Image (2).jpg"
+                ]
             },
             {
                 "figure_number": 2,
-                "label": "Nameplate",
+                "label": "Middle",
                 "continuation": false,
                 "images": [
-                    "IMG_6373.JPG"
-                ],
-                "image_count": 1
+                    "Image (3).jpg"
+                ]
             }
         ]
     },
@@ -28,24 +24,20 @@
         "page": 2,
         "sections": [
             {
-                "figure_number": 2,
-                "label": "Nameplate",
-                "continuation": true,
-                "images": [
-                    "IMG_6374.JPG",
-                    "IMG_6379.JPG"
-                ],
-                "image_count": 2
-            },
-            {
                 "figure_number": 3,
-                "label": "Radiators",
+                "label": "Min",
                 "continuation": false,
                 "images": [
-                    "IMG_6370.JPG",
-                    "IMG_6371.JPG"
-                ],
-                "image_count": 2
+                    "Image (1).jpg"
+                ]
+            },
+            {
+                "figure_number": 4,
+                "label": "Stenciling",
+                "continuation": false,
+                "images": [
+                    "IMG_6368.JPG"
+                ]
             }
         ]
     },
@@ -53,196 +45,20 @@
         "page": 3,
         "sections": [
             {
-                "figure_number": 4,
-                "label": "Stenciling",
-                "continuation": false,
-                "images": [
-                    "IMG_6372.JPG",
-                    "IMG_6376.JPG"
-                ],
-                "image_count": 2
-            },
-            {
                 "figure_number": 5,
-                "label": "Feeder Holder",
+                "label": "Transformer",
                 "continuation": false,
                 "images": [
-                    "IMG_6375.JPG"
-                ],
-                "image_count": 1
+                    "IMG_6367.JPG"
+                ]
             },
             {
                 "figure_number": 6,
-                "label": "Ground Cable",
-                "continuation": false,
-                "images": [
-                    "Image (2).jpg"
-                ],
-                "image_count": 1
-            }
-        ]
-    },
-    {
-        "page": 4,
-        "sections": [
-            {
-                "figure_number": 7,
-                "label": "Interior Barrier",
-                "continuation": false,
-                "images": [
-                    "Image (3).jpg"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 8,
-                "label": "Loadbreak",
-                "continuation": false,
-                "images": [
-                    "IMG_6396.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 9,
-                "label": "Loadbreak Switch",
-                "continuation": false,
-                "images": [
-                    "IMG_6397.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 10,
-                "label": "Temperature Guage",
-                "continuation": false,
-                "images": [
-                    "IMG_6378.JPG"
-                ],
-                "image_count": 1
-            }
-        ]
-    },
-    {
-        "page": 5,
-        "sections": [
-            {
-                "figure_number": 11,
-                "label": "Oil Drain",
-                "continuation": false,
-                "images": [
-                    "IMG_6380.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 12,
-                "label": "Oil Gauge",
-                "continuation": false,
-                "images": [
-                    "Image (1).jpg"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 13,
-                "label": "Primary Bushing",
-                "continuation": false,
-                "images": [
-                    "IMG_6391.JPG",
-                    "IMG_6392.JPG"
-                ],
-                "image_count": 2
-            }
-        ]
-    },
-    {
-        "page": 6,
-        "sections": [
-            {
-                "figure_number": 13,
-                "label": "Primary Bushing",
-                "continuation": true,
-                "images": [
-                    "IMG_6393.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 14,
-                "label": "Primary Bushings",
-                "continuation": false,
-                "images": [
-                    "IMG_6390.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 15,
-                "label": "Secondary Bushing Spades",
-                "continuation": false,
-                "images": [
-                    "IMG_6377.JPG",
-                    "IMG_6381.JPG"
-                ],
-                "image_count": 2
-            }
-        ]
-    },
-    {
-        "page": 7,
-        "sections": [
-            {
-                "figure_number": 16,
-                "label": "Tank Relieve",
-                "continuation": false,
-                "images": [
-                    "IMG_6394.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 17,
-                "label": "Tap Changer",
-                "continuation": false,
-                "images": [
-                    "IMG_6398.JPG"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 18,
-                "label": "Warning Labels",
+                "label": "Warning Label",
                 "continuation": false,
                 "images": [
                     "Image.jpg"
-                ],
-                "image_count": 1
-            },
-            {
-                "figure_number": 19,
-                "label": "Welds",
-                "continuation": false,
-                "images": [
-                    "IMG_6420.JPG"
-                ],
-                "image_count": 1
-            }
-        ]
-    },
-    {
-        "page": 8,
-        "sections": [
-            {
-                "figure_number": 20,
-                "label": "Misc",
-                "continuation": false,
-                "images": [
-                    "IMG_6395.JPG",
-                    "IMG_6419.JPG",
-                    "IMG_6421.JPG"
-                ],
-                "image_count": 3
+                ]
             }
         ]
     }

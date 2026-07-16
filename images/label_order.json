@@ -1,24 +1,26 @@
-{
-    "label_order": [
-        "Tank Construction",
-        "Nameplate",
-        "Radiators",
-        "Stenciling",
-        "Feeder Holder",
-        "Ground Cable",
-        "Interior Barrier",
-        "Loadbreak",
-        "Loadbreak Switch",
-        "Temperature Guage",
-        "Oil Drain",
-        "Oil Gauge",
-        "Primary Bushing",
-        "Primary Bushings",
-        "Secondary Bushing Spades",
-        "Tank Relieve",
-        "Tap Changer",
-        "Warning Labels",
-        "Welds",
-        "Misc"
-    ]
-}
+[
+    {
+        "figure_number": 1,
+        "label": "Grounder"
+    },
+    {
+        "figure_number": 2,
+        "label": "Middle"
+    },
+    {
+        "figure_number": 3,
+        "label": "Min"
+    },
+    {
+        "figure_number": 4,
+        "label": "Stenciling"
+    },
+    {
+        "figure_number": 5,
+        "label": "Transformer"
+    },
+    {
+        "figure_number": 6,
+        "label": "Warning Label"
+    }
+]

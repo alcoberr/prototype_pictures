@@ -1,126 +1,26 @@
 {
     "Image (1).jpg": {
-        "label": "Oil Gauge",
+        "label": "Min",
         "sequence": 1
     },
     "Image (2).jpg": {
-        "label": "Ground Cable",
+        "label": "Grounder",
         "sequence": 1
     },
     "Image (3).jpg": {
-        "label": "Interior Barrier",
+        "label": "Middle",
         "sequence": 1
     },
     "Image.jpg": {
-        "label": "Warning Labels",
+        "label": "Warning Label",
         "sequence": 1
     },
     "IMG_6367.JPG": {
-        "label": "Tank Construction",
+        "label": "Transformer",
         "sequence": 1
     },
     "IMG_6368.JPG": {
-        "label": "Tank Construction",
-        "sequence": 2
-    },
-    "IMG_6369.JPG": {
-        "label": "Tank Construction",
-        "sequence": 3
-    },
-    "IMG_6370.JPG": {
-        "label": "Radiators",
-        "sequence": 1
-    },
-    "IMG_6371.JPG": {
-        "label": "Radiators",
-        "sequence": 2
-    },
-    "IMG_6372.JPG": {
         "label": "Stenciling",
         "sequence": 1
-    },
-    "IMG_6373.JPG": {
-        "label": "Nameplate",
-        "sequence": 1
-    },
-    "IMG_6374.JPG": {
-        "label": "Nameplate",
-        "sequence": 2
-    },
-    "IMG_6375.JPG": {
-        "label": "Feeder Holder",
-        "sequence": 1
-    },
-    "IMG_6376.JPG": {
-        "label": "Stenciling",
-        "sequence": 2
-    },
-    "IMG_6377.JPG": {
-        "label": "Secondary Bushing Spades",
-        "sequence": 1
-    },
-    "IMG_6378.JPG": {
-        "label": "Temperature Guage",
-        "sequence": 1
-    },
-    "IMG_6379.JPG": {
-        "label": "Nameplate",
-        "sequence": 3
-    },
-    "IMG_6380.JPG": {
-        "label": "Oil Drain",
-        "sequence": 1
-    },
-    "IMG_6381.JPG": {
-        "label": "Secondary Bushing Spades",
-        "sequence": 2
-    },
-    "IMG_6390.JPG": {
-        "label": "Primary Bushings",
-        "sequence": 1
-    },
-    "IMG_6391.JPG": {
-        "label": "Primary Bushing",
-        "sequence": 1
-    },
-    "IMG_6392.JPG": {
-        "label": "Primary Bushing",
-        "sequence": 2
-    },
-    "IMG_6393.JPG": {
-        "label": "Primary Bushing",
-        "sequence": 3
-    },
-    "IMG_6394.JPG": {
-        "label": "Tank Relieve",
-        "sequence": 1
-    },
-    "IMG_6395.JPG": {
-        "label": "Misc",
-        "sequence": 1
-    },
-    "IMG_6396.JPG": {
-        "label": "Loadbreak",
-        "sequence": 1
-    },
-    "IMG_6397.JPG": {
-        "label": "Loadbreak Switch",
-        "sequence": 1
-    },
-    "IMG_6398.JPG": {
-        "label": "Tap Changer",
-        "sequence": 1
-    },
-    "IMG_6419.JPG": {
-        "label": "Misc",
-        "sequence": 2
-    },
-    "IMG_6420.JPG": {
-        "label": "Welds",
-        "sequence": 1
-    },
-    "IMG_6421.JPG": {
-        "label": "Misc",
-        "sequence": 3
     }
 }

@@ -5,8 +5,12 @@ from copy import copy
 from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
 
-TEMPLATE_FILE = r"docs\Template.xlsx"
-IMAGE_FOLDER = Path("images")
+TEMPLATE_FILE = (
+    Path(__file__).resolve().parent.parent
+    / "docs"
+    / "Template.xlsx"
+)
+IMAGE_FOLDER = None
 
 
 def load_page_plan():
@@ -77,8 +81,8 @@ def figure_text(section):
 
 def fit_image(img):
 
-    max_width = 450
-    max_height = 300
+    max_width = 900
+    max_height = 600
 
     scale = min(
         max_width / img.width,
@@ -349,8 +353,32 @@ def clone_master(
 
     return ws
 
+def apply_serial_number(
+    ws,
+    serial_number
+):
 
-def main():
+    if not serial_number:
+        return
+
+    ws["AD3"] = serial_number
+
+
+def main(project_folder=None, serial_number=""):
+
+    global IMAGE_FOLDER
+
+    if project_folder:
+
+        IMAGE_FOLDER = Path(
+            project_folder
+        )
+
+    else:
+
+        IMAGE_FOLDER = Path(
+            "images"
+        )
 
     pages = load_page_plan()
 
@@ -360,6 +388,10 @@ def main():
 
     first_sheet = wb.worksheets[0]
     master_sheet = wb.worksheets[1]
+    apply_serial_number(
+        first_sheet,
+        serial_number
+    )
 
     template_placeholders = find_placeholders(
         master_sheet
@@ -431,9 +463,4 @@ def main():
         output_file
     )
 
-    print(
-        f"Generated: {output_file}"
-    )
-    
-if __name__ == "__main__":
-    main()
+    return output_file
