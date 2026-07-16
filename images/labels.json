@@ -1,86 +1,126 @@
 {
-    "20260311_104927688_iOS.jpg": {
-        "label": "Bushing",
+    "Image (1).jpg": {
+        "label": "Oil Gauge",
         "sequence": 1
     },
-    "20260311_104933652_iOS.jpg": {
-        "label": "Bushing",
-        "sequence": 2
-    },
-    "20260311_104939671_iOS.jpg": {
-        "label": "Misc",
+    "Image (2).jpg": {
+        "label": "Ground Cable",
         "sequence": 1
     },
-    "20260311_104944313_iOS.jpg": {
-        "label": "Misc",
+    "Image (3).jpg": {
+        "label": "Interior Barrier",
+        "sequence": 1
+    },
+    "Image.jpg": {
+        "label": "Warning Labels",
+        "sequence": 1
+    },
+    "IMG_6367.JPG": {
+        "label": "Tank Construction",
+        "sequence": 1
+    },
+    "IMG_6368.JPG": {
+        "label": "Tank Construction",
         "sequence": 2
     },
-    "IMG_6683.JPG": {
-        "label": "Bushing",
+    "IMG_6369.JPG": {
+        "label": "Tank Construction",
         "sequence": 3
     },
-    "IMG_6684.JPG": {
-        "label": "Bushing",
-        "sequence": 4
+    "IMG_6370.JPG": {
+        "label": "Radiators",
+        "sequence": 1
     },
-    "IMG_6685.JPG": {
-        "label": "Bushing",
-        "sequence": 5
+    "IMG_6371.JPG": {
+        "label": "Radiators",
+        "sequence": 2
     },
-    "IMG_6686.JPG": {
-        "label": "Bushing",
-        "sequence": 6
+    "IMG_6372.JPG": {
+        "label": "Stenciling",
+        "sequence": 1
     },
-    "IMG_6687.JPG": {
-        "label": "Bushing",
-        "sequence": 7
+    "IMG_6373.JPG": {
+        "label": "Nameplate",
+        "sequence": 1
     },
-    "IMG_8129.JPG": {
-        "label": "Bushing",
-        "sequence": 8
+    "IMG_6374.JPG": {
+        "label": "Nameplate",
+        "sequence": 2
     },
-    "IMG_8130.JPG": {
-        "label": "Bushing",
-        "sequence": 9
+    "IMG_6375.JPG": {
+        "label": "Feeder Holder",
+        "sequence": 1
     },
-    "IMG_8131.JPG": {
-        "label": "Bushing",
-        "sequence": 10
+    "IMG_6376.JPG": {
+        "label": "Stenciling",
+        "sequence": 2
     },
-    "IMG_8132.JPG": {
-        "label": "Bushing",
-        "sequence": 11
+    "IMG_6377.JPG": {
+        "label": "Secondary Bushing Spades",
+        "sequence": 1
     },
-    "IMG_8133.JPG": {
-        "label": "Bushing",
-        "sequence": 12
+    "IMG_6378.JPG": {
+        "label": "Temperature Guage",
+        "sequence": 1
     },
-    "IMG_8134.JPG": {
-        "label": "Bushing",
-        "sequence": 13
+    "IMG_6379.JPG": {
+        "label": "Nameplate",
+        "sequence": 3
     },
-    "IMG_8135.JPG": {
-        "label": "Bushing",
-        "sequence": 14
+    "IMG_6380.JPG": {
+        "label": "Oil Drain",
+        "sequence": 1
     },
-    "IMG_8136.JPG": {
-        "label": "Bushing",
-        "sequence": 15
+    "IMG_6381.JPG": {
+        "label": "Secondary Bushing Spades",
+        "sequence": 2
     },
-    "IMG_8137.JPG": {
-        "label": "Bushing",
-        "sequence": 16
+    "IMG_6390.JPG": {
+        "label": "Primary Bushings",
+        "sequence": 1
     },
-    "IMG_8138.JPG": {
-        "label": "Bushing",
-        "sequence": 17
+    "IMG_6391.JPG": {
+        "label": "Primary Bushing",
+        "sequence": 1
     },
-    "IMG_8139.JPG": {
-        "label": "Bushing",
-        "sequence": 18
+    "IMG_6392.JPG": {
+        "label": "Primary Bushing",
+        "sequence": 2
     },
-    "IMG_8140.JPG": {
-        "label": "Bushing",
-        "sequence": 19
+    "IMG_6393.JPG": {
+        "label": "Primary Bushing",
+        "sequence": 3
+    },
+    "IMG_6394.JPG": {
+        "label": "Tank Relieve",
+        "sequence": 1
+    },
+    "IMG_6395.JPG": {
+        "label": "Misc",
+        "sequence": 1
+    },
+    "IMG_6396.JPG": {
+        "label": "Loadbreak",
+        "sequence": 1
+    },
+    "IMG_6397.JPG": {
+        "label": "Loadbreak Switch",
+        "sequence": 1
+    },
+    "IMG_6398.JPG": {
+        "label": "Tap Changer",
+        "sequence": 1
+    },
+    "IMG_6419.JPG": {
+        "label": "Misc",
+        "sequence": 2
+    },
+    "IMG_6420.JPG": {
+        "label": "Welds",
+        "sequence": 1
+    },
+    "IMG_6421.JPG": {
+        "label": "Misc",
+        "sequence": 3
     }
 }
