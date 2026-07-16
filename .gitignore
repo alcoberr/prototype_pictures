@@ -1,7 +1,6 @@
-myenv/
-
-__pycache__/
-*.pyc
-
-images/labels.json
-images/report_structure.json
+__pycache__/ 
+*.pyc 
+myenv/ 
+venv/ 
+.venv/ 
+Prototype_Report.xlsx 

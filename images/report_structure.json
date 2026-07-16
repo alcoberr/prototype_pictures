@@ -1,0 +1,38 @@
+{
+    "Min": [
+        {
+            "file": "Image (1).jpg",
+            "sequence": 1
+        }
+    ],
+    "Grounder": [
+        {
+            "file": "Image (2).jpg",
+            "sequence": 1
+        }
+    ],
+    "Middle": [
+        {
+            "file": "Image (3).jpg",
+            "sequence": 1
+        }
+    ],
+    "Warning Label": [
+        {
+            "file": "Image.jpg",
+            "sequence": 1
+        }
+    ],
+    "Transformer": [
+        {
+            "file": "IMG_6367.JPG",
+            "sequence": 1
+        }
+    ],
+    "Stenciling": [
+        {
+            "file": "IMG_6368.JPG",
+            "sequence": 1
+        }
+    ]
+}
