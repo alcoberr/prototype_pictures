@@ -1,10 +1,10 @@
 {
     "Image (1).jpg": {
-        "label": "Min",
+        "label": "Oil Min",
         "sequence": 1
     },
     "Image (2).jpg": {
-        "label": "Grounder",
+        "label": "Grounding",
         "sequence": 1
     },
     "Image (3).jpg": {
@@ -12,7 +12,7 @@
         "sequence": 1
     },
     "Image.jpg": {
-        "label": "Warning Label",
+        "label": "Warning Labels",
         "sequence": 1
     },
     "IMG_6367.JPG": {

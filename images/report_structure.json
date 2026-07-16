@@ -1,11 +1,11 @@
 {
-    "Min": [
+    "Oil Min": [
         {
             "file": "Image (1).jpg",
             "sequence": 1
         }
     ],
-    "Grounder": [
+    "Grounding": [
         {
             "file": "Image (2).jpg",
             "sequence": 1
@@ -17,7 +17,7 @@
             "sequence": 1
         }
     ],
-    "Warning Label": [
+    "Warning Labels": [
         {
             "file": "Image.jpg",
             "sequence": 1

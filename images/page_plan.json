@@ -4,18 +4,18 @@
         "sections": [
             {
                 "figure_number": 1,
-                "label": "Grounder",
+                "label": "Transformer",
                 "continuation": false,
                 "images": [
-                    "Image (2).jpg"
+                    "IMG_6367.JPG"
                 ]
             },
             {
                 "figure_number": 2,
-                "label": "Middle",
+                "label": "Grounding",
                 "continuation": false,
                 "images": [
-                    "Image (3).jpg"
+                    "Image (2).jpg"
                 ]
             }
         ]
@@ -25,18 +25,18 @@
         "sections": [
             {
                 "figure_number": 3,
-                "label": "Min",
+                "label": "Middle",
                 "continuation": false,
                 "images": [
-                    "Image (1).jpg"
+                    "Image (3).jpg"
                 ]
             },
             {
                 "figure_number": 4,
-                "label": "Stenciling",
+                "label": "Oil Min",
                 "continuation": false,
                 "images": [
-                    "IMG_6368.JPG"
+                    "Image (1).jpg"
                 ]
             }
         ]
@@ -46,15 +46,15 @@
         "sections": [
             {
                 "figure_number": 5,
-                "label": "Transformer",
+                "label": "Stenciling",
                 "continuation": false,
                 "images": [
-                    "IMG_6367.JPG"
+                    "IMG_6368.JPG"
                 ]
             },
             {
                 "figure_number": 6,
-                "label": "Warning Label",
+                "label": "Warning Labels",
                 "continuation": false,
                 "images": [
                     "Image.jpg"

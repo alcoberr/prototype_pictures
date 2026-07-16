@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 
+from PIL import Image, ImageTk
+
 from core.review_session import ReviewSession
 
 
@@ -21,6 +23,8 @@ class ReviewFrame(ttk.Frame):
 
         self.on_close = on_close
 
+        self.current_photo = None
+
         self.build_ui()
 
         self.load_labels()
@@ -38,6 +42,11 @@ class ReviewFrame(ttk.Frame):
 
         self.columnconfigure(
             1,
+            weight=1
+        )
+
+        self.columnconfigure(
+            2,
             weight=2
         )
 
@@ -53,7 +62,7 @@ class ReviewFrame(ttk.Frame):
         header.grid(
             row=0,
             column=0,
-            columnspan=2,
+            columnspan=3,
             sticky="ew",
             padx=10,
             pady=10
@@ -79,7 +88,9 @@ class ReviewFrame(ttk.Frame):
             side="right"
         )
 
+        # ==========================
         # Labels
+        # ==========================
 
         labels_frame = ttk.LabelFrame(
             self,
@@ -110,7 +121,9 @@ class ReviewFrame(ttk.Frame):
             self.on_label_selected
         )
 
+        # ==========================
         # Images
+        # ==========================
 
         images_frame = ttk.LabelFrame(
             self,
@@ -136,7 +149,40 @@ class ReviewFrame(ttk.Frame):
             pady=5
         )
 
+        self.image_list.bind(
+            "<<ListboxSelect>>",
+            self.on_image_selected
+        )
+
+        # ==========================
+        # Preview
+        # ==========================
+
+        preview_frame = ttk.LabelFrame(
+            self,
+            text="Preview"
+        )
+
+        preview_frame.grid(
+            row=1,
+            column=2,
+            sticky="nsew",
+            padx=10,
+            pady=10
+        )
+
+        self.preview_label = ttk.Label(
+            preview_frame
+        )
+
+        self.preview_label.pack(
+            fill="both",
+            expand=True
+        )
+
+        # ==========================
         # Actions
+        # ==========================
 
         action_frame = ttk.LabelFrame(
             self,
@@ -146,7 +192,7 @@ class ReviewFrame(ttk.Frame):
         action_frame.grid(
             row=2,
             column=0,
-            columnspan=2,
+            columnspan=3,
             sticky="ew",
             padx=10,
             pady=10
@@ -243,7 +289,6 @@ class ReviewFrame(ttk.Frame):
         )
 
         if not selection:
-
             return None
 
         text = self.label_list.get(
@@ -255,7 +300,7 @@ class ReviewFrame(ttk.Frame):
         )[0]
 
     # ==================================
-    # Loading
+    # Load Labels
     # ==================================
 
     def load_labels(self):
@@ -278,11 +323,13 @@ class ReviewFrame(ttk.Frame):
                 f"{label} ({count})"
             )
 
-        labels = (
+        self.merge_combo["values"] = (
             self.session.get_labels()
         )
 
-        self.merge_combo["values"] = labels
+    # ==================================
+    # Label Selected
+    # ==================================
 
     def on_label_selected(
         self,
@@ -294,7 +341,6 @@ class ReviewFrame(ttk.Frame):
         )
 
         if not label:
-
             return
 
         self.image_list.delete(
@@ -320,6 +366,75 @@ class ReviewFrame(ttk.Frame):
                 item["file"]
             )
 
+        if self.image_list.size() > 0:
+
+            self.image_list.selection_set(
+                0
+            )
+
+            self.on_image_selected()
+
+    # ==================================
+    # Image Preview
+    # ==================================
+
+    def on_image_selected(
+        self,
+        event=None
+    ):
+
+        selection = (
+            self.image_list.curselection()
+        )
+
+        if not selection:
+            return
+
+        image_name = (
+            self.image_list.get(
+                selection[0]
+            )
+        )
+
+        image_path = (
+            self.session.image_folder
+            / image_name
+        )
+
+        if not image_path.exists():
+            return
+
+        try:
+
+            image = Image.open(
+                image_path
+            )
+
+            image.thumbnail(
+                (
+                    900,
+                    700
+                )
+            )
+
+            self.current_photo = (
+                ImageTk.PhotoImage(
+                    image
+                )
+            )
+
+            self.preview_label.configure(
+                image=self.current_photo,
+                text=""
+            )
+
+        except Exception as ex:
+
+            self.preview_label.configure(
+                image="",
+                text=str(ex)
+            )
+
     # ==================================
     # Actions
     # ==================================
@@ -337,11 +452,9 @@ class ReviewFrame(ttk.Frame):
         )
 
         if not old_label:
-
             return
 
         if not new_label:
-
             return
 
         self.session.rename_label(
@@ -364,11 +477,9 @@ class ReviewFrame(ttk.Frame):
         )
 
         if not source:
-
             return
 
         if not target:
-
             return
 
         if source == target:
@@ -394,23 +505,16 @@ class ReviewFrame(ttk.Frame):
         )
 
         if not label:
-
             return
 
-        result = (
-            messagebox.askyesno(
-                "Delete Label",
-                (
-                    f"Delete label:\n\n"
-                    f"{label}\n\n"
-                    f"This removes all "
-                    f"image assignments."
-                )
+        if not messagebox.askyesno(
+            "Delete Label",
+            (
+                f"Delete label:\n\n"
+                f"{label}\n\n"
+                f"This removes all assignments."
             )
-        )
-
-        if not result:
-
+        ):
             return
 
         self.session.delete_label(
@@ -420,6 +524,11 @@ class ReviewFrame(ttk.Frame):
         self.image_list.delete(
             0,
             tk.END
+        )
+
+        self.preview_label.configure(
+            image="",
+            text=""
         )
 
         self.load_labels()

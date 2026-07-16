@@ -1,26 +1,26 @@
 [
     {
         "figure_number": 1,
-        "label": "Grounder"
-    },
-    {
-        "figure_number": 2,
-        "label": "Middle"
-    },
-    {
-        "figure_number": 3,
-        "label": "Min"
-    },
-    {
-        "figure_number": 4,
-        "label": "Stenciling"
-    },
-    {
-        "figure_number": 5,
         "label": "Transformer"
     },
     {
+        "figure_number": 2,
+        "label": "Grounding"
+    },
+    {
+        "figure_number": 3,
+        "label": "Middle"
+    },
+    {
+        "figure_number": 4,
+        "label": "Oil Min"
+    },
+    {
+        "figure_number": 5,
+        "label": "Stenciling"
+    },
+    {
         "figure_number": 6,
-        "label": "Warning Label"
+        "label": "Warning Labels"
     }
 ]
