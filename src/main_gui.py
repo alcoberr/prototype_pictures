@@ -3,6 +3,9 @@ from tkinter import ttk, filedialog
 from pathlib import Path
 import jayjay
 
+import threading
+from tkinter import messagebox
+
 from PIL import Image, ImageTk
 
 from ui.labeler_frame import LabelerFrame
@@ -69,6 +72,67 @@ class MainGUI:
         self.original_logo = None
 
         self.build_ui()
+    
+    def show_loading(self, message):
+
+        self.loading_window = tk.Toplevel(
+            self.root
+        )
+
+        self.loading_window.title(
+            "Please Wait"
+        )
+
+        self.loading_window.geometry(
+            "350x120"
+        )
+
+        self.loading_window.resizable(
+            False,
+            False
+        )
+
+        self.loading_window.transient(
+            self.root
+        )
+
+        self.loading_window.grab_set()
+
+        ttk.Label(
+            self.loading_window,
+            text=message,
+            font=("Segoe UI", 11)
+        ).pack(
+            pady=20
+        )
+
+        pb = ttk.Progressbar(
+            self.loading_window,
+            mode="indeterminate"
+        )
+
+        pb.pack(
+            fill="x",
+            padx=20,
+            pady=10
+        )
+
+        pb.start(10)
+
+        self.loading_window.update()
+
+
+    def hide_loading(self):
+
+        if hasattr(
+            self,
+            "loading_window"
+        ):
+
+            try:
+                self.loading_window.destroy()
+            except:
+                pass
 
     def on_application_close(self):
 
@@ -602,56 +666,126 @@ class MainGUI:
         if not self.project_folder:
             return
 
+        self.show_loading(
+            "Generating Excel report..."
+        )
+
+        threading.Thread(
+            target=self._generate_report,
+            daemon=True
+        ).start()
+
+    def _generate_report(self):
+
         try:
+
+            print("START EXPORT")
 
             output_file = jayjay.main(
                 self.active_folder,
                 self.serial_number_var.get().strip()
             )
+
+            print("EXPORT COMPLETE")
+
             self.sync_workspace_to_project()
 
-            self.show_dashboard()
+            print("SYNC COMPLETE")
 
-            from tkinter import messagebox
-
-            messagebox.showinfo(
-                "Report Generated",
-                f"Created:\n\n{output_file}"
+            self.root.after(
+                0,
+                lambda output_file=output_file:
+                self.finish_report(
+                    output_file
+                )
             )
 
         except Exception as ex:
 
-            from tkinter import messagebox
-
-            messagebox.showerror(
-                "Export Error",
-                str(ex)
+            print(
+                "EXPORT FAILED:",
+                ex
             )
+
+            self.root.after(
+                0,
+                lambda ex=ex:
+                self.report_error(ex)
+            )
+
+    def finish_report(
+        self,
+        output_file
+    ):
+
+        self.hide_loading()
+
+        self.show_dashboard()
+
+        messagebox.showinfo(
+            "Report Generated",
+            f"Created:\n\n{output_file}"
+        )
 
     # ======================================
     # Folder Selection
     # ======================================
+    def _load_folder(
+        self,
+        folder
+    ):
 
-    def select_folder(self):
+        try:
 
-        folder = (
-            filedialog.askdirectory()
+            self.project_folder = Path(
+                folder
+            )
+
+            self.load_project_to_workspace(
+                self.project_folder
+            )
+
+            self.active_folder = (
+                self.workspace_folder
+            )
+
+            self.root.after(
+                0,
+                self.finish_folder_load
+            )
+
+        except Exception as ex:
+
+            self.root.after(
+                0,
+                lambda:
+                self.folder_load_error(ex)
+            )
+    def folder_load_error(
+        self,
+        ex
+    ):
+
+        self.hide_loading()
+
+        messagebox.showerror(
+            "Load Error",
+            str(ex)
         )
 
-        if not folder:
-            return
+    def report_error(
+        self,
+        ex
+    ):
 
-        self.project_folder = Path(
-            folder
+        self.hide_loading()
+
+        messagebox.showerror(
+            "Export Error",
+            str(ex)
         )
 
-        self.load_project_to_workspace(
-            self.project_folder
-        )
-
-        self.active_folder = (
-            self.workspace_folder
-        )
+    def finish_folder_load(self):
 
         self.folder_label.config(
             text=str(
@@ -659,7 +793,27 @@ class MainGUI:
             )
         )
 
+        self.hide_loading()
+
         self.show_dashboard()
+
+
+    def select_folder(self):
+
+        folder = filedialog.askdirectory()
+
+        if not folder:
+            return
+
+        self.show_loading(
+            "Downloading Pictures..."
+        )
+
+        threading.Thread(
+            target=self._load_folder,
+            args=(folder,),
+            daemon=True
+        ).start()
 
 
 if __name__ == "__main__":
