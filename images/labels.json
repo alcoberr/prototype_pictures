@@ -1,26 +1,138 @@
 {
-    "Image (1).jpg": {
-        "label": "Oil Min",
+    "054ef9e2-2f8d-413e-bf7d-516164f37cfd.jpg": {
+        "label": "Sill",
         "sequence": 1
     },
-    "Image (2).jpg": {
-        "label": "Grounding",
+    "0e62819c-49b9-4fb7-82b4-4170de094d40.jpg": {
+        "label": "High Voltage Bushings",
         "sequence": 1
     },
-    "Image (3).jpg": {
-        "label": "Middle",
+    "0e7a7c28-2798-427a-9236-ad329eb71946.jpg": {
+        "label": "Oil Float",
         "sequence": 1
     },
-    "Image.jpg": {
+    "138daf1d-1e27-46aa-81b0-c64f6a6d634c.jpg": {
+        "label": "Tank External",
+        "sequence": 1
+    },
+    "2ee89447-4032-425d-8f67-c885ddca4f53.jpg": {
+        "label": "Left Door",
+        "sequence": 1
+    },
+    "2f740281-eac9-4da8-a2bc-28357b5b9f8e.jpg": {
+        "label": "Left Door",
+        "sequence": 2
+    },
+    "312ae6e0-0430-49e6-a789-0d0fa109da16.jpg": {
+        "label": "Oil Valve",
+        "sequence": 1
+    },
+    "3445b821-abf8-4bff-8cd8-c0dedbef03d7.jpg": {
+        "label": "Tank External",
+        "sequence": 2
+    },
+    "369acfdd-66af-41e7-87d1-3cffcec626cb.jpg": {
+        "label": "Loadbreak Fuses",
+        "sequence": 1
+    },
+    "439bd83e-e73b-400f-a380-87618e05c0c6.jpg": {
+        "label": "High Voltage Bushings",
+        "sequence": 2
+    },
+    "4d97347d-8835-4b7d-acb2-5fece3183bff.jpg": {
+        "label": "Low Voltage Bushings",
+        "sequence": 1
+    },
+    "51ac91ae-5686-4522-8d7f-d4bccca9985b.jpg": {
+        "label": "Misc",
+        "sequence": 1
+    },
+    "54f0919e-a411-403c-b210-ef4f4c2fe867.jpg": {
+        "label": "Right Door",
+        "sequence": 1
+    },
+    "68017f27-8416-4505-940b-5977405e70a3.jpg": {
         "label": "Warning Labels",
         "sequence": 1
     },
-    "IMG_6367.JPG": {
-        "label": "Transformer",
+    "6c139c4b-192b-417e-9de4-b3af0b7b50a3.jpg": {
+        "label": "Left Door",
+        "sequence": 3
+    },
+    "7c29ac12-71a2-43e4-b4eb-3fd020aa7358.jpg": {
+        "label": "Nameplate",
         "sequence": 1
     },
-    "IMG_6368.JPG": {
-        "label": "Stenciling",
+    "7ce4ee81-2fbe-42d0-a771-902769f43a93.jpg": {
+        "label": "Tank External",
+        "sequence": 3
+    },
+    "7f72cce7-877c-4152-959c-14c3ebb65a80.jpg": {
+        "label": "Right Door",
+        "sequence": 2
+    },
+    "80cc375d-b5a5-4616-b1cf-1b0f40ee7652.jpg": {
+        "label": "Sill",
+        "sequence": 2
+    },
+    "88c3a5a1-447b-40d0-9cfc-0181282ea342.jpg": {
+        "label": "Tank External",
+        "sequence": 4
+    },
+    "94d30004-598e-4f82-a5f8-11fce5547225.jpg": {
+        "label": "Temporary Barcode",
+        "sequence": 1
+    },
+    "95d15c70-298d-43a2-ab75-db6506197fd5.jpg": {
+        "label": "High Voltage Bushings",
+        "sequence": 3
+    },
+    "97add186-8dcf-485b-b9ab-5ce3e2aab6ad.jpg": {
+        "label": "Left Side",
+        "sequence": 1
+    },
+    "b635f5cc-16ba-4fa1-bf57-c799614ff715.jpg": {
+        "label": "Tank External",
+        "sequence": 5
+    },
+    "b97a36c7-2fde-4830-8609-a5309465a75b.jpg": {
+        "label": "High Voltage Bushings",
+        "sequence": 4
+    },
+    "d9840035-f83e-44c5-b061-edcd6817ce65.jpg": {
+        "label": "Oil Fitting & Ifd",
+        "sequence": 1
+    },
+    "da5cd0a0-ae31-4604-afbe-87d747220022.jpg": {
+        "label": "Right Side",
+        "sequence": 1
+    },
+    "da7b50d4-6a8f-4fc4-b580-5af3085d6f2a.jpg": {
+        "label": "Temperature Gauge",
+        "sequence": 1
+    },
+    "ddc23bda-410e-4272-ba40-4c228266bacd.jpg": {
+        "label": "Notice Label",
+        "sequence": 1
+    },
+    "e976dc05-d7c6-4e56-8d48-0d31e224b225.jpg": {
+        "label": "Tank External",
+        "sequence": 6
+    },
+    "f01b8fb8-b6f0-44c0-bb9b-3a191ff18194.jpg": {
+        "label": "Door Stand",
+        "sequence": 1
+    },
+    "f5e334cc-947c-46c5-af95-e6dc3c065320.jpg": {
+        "label": "High Voltage Bushings",
+        "sequence": 5
+    },
+    "f87919ec-75aa-4aea-a0a4-1d0c792ee0c4.jpg": {
+        "label": "Right Door",
+        "sequence": 3
+    },
+    "fdff6174-155a-4c7e-aa13-45fcbc1e64f4.jpg": {
+        "label": "Loadbreak Switch & Tap Changer",
         "sequence": 1
     }
 }

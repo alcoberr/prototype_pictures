@@ -4,7 +4,7 @@ from pathlib import Path
 
 class PagePlannerSession:
 
-    IMAGES_PER_SECTION = 4
+    IMAGES_PER_SECTION = 2
 
     def __init__(
         self,

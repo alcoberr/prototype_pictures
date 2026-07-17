@@ -42,6 +42,11 @@ class LabelerFrame(ttk.Frame):
     # ==================================
     # UI
     # ==================================
+    def on_enter(
+        self,
+        event=None
+    ):
+        self.save_label()
 
     def build_ui(self):
 
@@ -119,6 +124,11 @@ class LabelerFrame(ttk.Frame):
             bottom,
             textvariable=self.label_var,
             width=40
+        )
+
+        self.label_entry.bind(
+            "<Return>",
+            self.on_enter
         )
 
         self.label_entry.grid(
@@ -259,6 +269,11 @@ class LabelerFrame(ttk.Frame):
         self.refresh_existing_labels()
 
         self.label_entry.focus_set()
+
+        self.label_entry.selection_range(
+            0,
+            tk.END
+        )
 
     # ==================================
     # Labels

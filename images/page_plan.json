@@ -4,18 +4,20 @@
         "sections": [
             {
                 "figure_number": 1,
-                "label": "Transformer",
+                "label": "Tank External",
                 "continuation": false,
                 "images": [
-                    "IMG_6367.JPG"
+                    "138daf1d-1e27-46aa-81b0-c64f6a6d634c.jpg",
+                    "3445b821-abf8-4bff-8cd8-c0dedbef03d7.jpg"
                 ]
             },
             {
-                "figure_number": 2,
-                "label": "Grounding",
-                "continuation": false,
+                "figure_number": 1,
+                "label": "Tank External",
+                "continuation": true,
                 "images": [
-                    "Image (2).jpg"
+                    "7ce4ee81-2fbe-42d0-a771-902769f43a93.jpg",
+                    "88c3a5a1-447b-40d0-9cfc-0181282ea342.jpg"
                 ]
             }
         ]
@@ -24,19 +26,20 @@
         "page": 2,
         "sections": [
             {
-                "figure_number": 3,
-                "label": "Middle",
-                "continuation": false,
+                "figure_number": 1,
+                "label": "Tank External",
+                "continuation": true,
                 "images": [
-                    "Image (3).jpg"
+                    "b635f5cc-16ba-4fa1-bf57-c799614ff715.jpg",
+                    "e976dc05-d7c6-4e56-8d48-0d31e224b225.jpg"
                 ]
             },
             {
-                "figure_number": 4,
-                "label": "Oil Min",
+                "figure_number": 2,
+                "label": "Nameplate",
                 "continuation": false,
                 "images": [
-                    "Image (1).jpg"
+                    "7c29ac12-71a2-43e4-b4eb-3fd020aa7358.jpg"
                 ]
             }
         ]
@@ -45,19 +48,234 @@
         "page": 3,
         "sections": [
             {
-                "figure_number": 5,
-                "label": "Stenciling",
+                "figure_number": 3,
+                "label": "High Voltage Bushings",
                 "continuation": false,
                 "images": [
-                    "IMG_6368.JPG"
+                    "0e62819c-49b9-4fb7-82b4-4170de094d40.jpg",
+                    "439bd83e-e73b-400f-a380-87618e05c0c6.jpg"
                 ]
             },
             {
+                "figure_number": 3,
+                "label": "High Voltage Bushings",
+                "continuation": true,
+                "images": [
+                    "95d15c70-298d-43a2-ab75-db6506197fd5.jpg",
+                    "b97a36c7-2fde-4830-8609-a5309465a75b.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 4,
+        "sections": [
+            {
+                "figure_number": 3,
+                "label": "High Voltage Bushings",
+                "continuation": true,
+                "images": [
+                    "f5e334cc-947c-46c5-af95-e6dc3c065320.jpg"
+                ]
+            },
+            {
+                "figure_number": 4,
+                "label": "Left Door",
+                "continuation": false,
+                "images": [
+                    "2ee89447-4032-425d-8f67-c885ddca4f53.jpg",
+                    "2f740281-eac9-4da8-a2bc-28357b5b9f8e.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 5,
+        "sections": [
+            {
+                "figure_number": 4,
+                "label": "Left Door",
+                "continuation": true,
+                "images": [
+                    "6c139c4b-192b-417e-9de4-b3af0b7b50a3.jpg"
+                ]
+            },
+            {
+                "figure_number": 5,
+                "label": "Left Side",
+                "continuation": false,
+                "images": [
+                    "97add186-8dcf-485b-b9ab-5ce3e2aab6ad.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 6,
+        "sections": [
+            {
                 "figure_number": 6,
+                "label": "Loadbreak Fuses",
+                "continuation": false,
+                "images": [
+                    "369acfdd-66af-41e7-87d1-3cffcec626cb.jpg"
+                ]
+            },
+            {
+                "figure_number": 7,
+                "label": "Loadbreak Switch & Tap Changer",
+                "continuation": false,
+                "images": [
+                    "fdff6174-155a-4c7e-aa13-45fcbc1e64f4.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 7,
+        "sections": [
+            {
+                "figure_number": 8,
+                "label": "Low Voltage Bushings",
+                "continuation": false,
+                "images": [
+                    "4d97347d-8835-4b7d-acb2-5fece3183bff.jpg"
+                ]
+            },
+            {
+                "figure_number": 9,
+                "label": "Notice Label",
+                "continuation": false,
+                "images": [
+                    "ddc23bda-410e-4272-ba40-4c228266bacd.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 8,
+        "sections": [
+            {
+                "figure_number": 10,
+                "label": "Right Side",
+                "continuation": false,
+                "images": [
+                    "da5cd0a0-ae31-4604-afbe-87d747220022.jpg"
+                ]
+            },
+            {
+                "figure_number": 11,
+                "label": "Right Door",
+                "continuation": false,
+                "images": [
+                    "54f0919e-a411-403c-b210-ef4f4c2fe867.jpg",
+                    "7f72cce7-877c-4152-959c-14c3ebb65a80.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 9,
+        "sections": [
+            {
+                "figure_number": 11,
+                "label": "Right Door",
+                "continuation": true,
+                "images": [
+                    "f87919ec-75aa-4aea-a0a4-1d0c792ee0c4.jpg"
+                ]
+            },
+            {
+                "figure_number": 12,
+                "label": "Oil Fitting & Ifd",
+                "continuation": false,
+                "images": [
+                    "d9840035-f83e-44c5-b061-edcd6817ce65.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 10,
+        "sections": [
+            {
+                "figure_number": 13,
+                "label": "Door Stand",
+                "continuation": false,
+                "images": [
+                    "f01b8fb8-b6f0-44c0-bb9b-3a191ff18194.jpg"
+                ]
+            },
+            {
+                "figure_number": 14,
+                "label": "Oil Float",
+                "continuation": false,
+                "images": [
+                    "0e7a7c28-2798-427a-9236-ad329eb71946.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 11,
+        "sections": [
+            {
+                "figure_number": 15,
+                "label": "Oil Valve",
+                "continuation": false,
+                "images": [
+                    "312ae6e0-0430-49e6-a789-0d0fa109da16.jpg"
+                ]
+            },
+            {
+                "figure_number": 16,
+                "label": "Sill",
+                "continuation": false,
+                "images": [
+                    "054ef9e2-2f8d-413e-bf7d-516164f37cfd.jpg",
+                    "80cc375d-b5a5-4616-b1cf-1b0f40ee7652.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 12,
+        "sections": [
+            {
+                "figure_number": 17,
+                "label": "Temperature Gauge",
+                "continuation": false,
+                "images": [
+                    "da7b50d4-6a8f-4fc4-b580-5af3085d6f2a.jpg"
+                ]
+            },
+            {
+                "figure_number": 18,
+                "label": "Temporary Barcode",
+                "continuation": false,
+                "images": [
+                    "94d30004-598e-4f82-a5f8-11fce5547225.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "page": 13,
+        "sections": [
+            {
+                "figure_number": 19,
                 "label": "Warning Labels",
                 "continuation": false,
                 "images": [
-                    "Image.jpg"
+                    "68017f27-8416-4505-940b-5977405e70a3.jpg"
+                ]
+            },
+            {
+                "figure_number": 20,
+                "label": "Misc",
+                "continuation": false,
+                "images": [
+                    "51ac91ae-5686-4522-8d7f-d4bccca9985b.jpg"
                 ]
             }
         ]

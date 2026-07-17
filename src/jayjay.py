@@ -5,11 +5,30 @@ from copy import copy
 from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
 
-TEMPLATE_FILE = (
-    Path(__file__).resolve().parent.parent
-    / "docs"
-    / "Template.xlsx"
+import sys
+from pathlib import Path
+
+
+def resource_path(relative_path):
+
+    try:
+
+        base_path = Path(
+            sys._MEIPASS
+        )
+
+    except Exception:
+
+        base_path = Path(
+            __file__
+        ).resolve().parent
+
+    return base_path / relative_path
+
+TEMPLATE_FILE = resource_path(
+    "docs/Template.xlsx"
 )
+
 IMAGE_FOLDER = None
 
 
@@ -25,7 +44,7 @@ def load_page_plan():
 
 def apply_page_settings(ws):
 
-    ws.print_area = "D1:AQ47"
+    ws.print_area = "D1:AQ45"
 
     try:
         ws.sheet_view.view = "pageBreakPreview"

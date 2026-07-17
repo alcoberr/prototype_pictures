@@ -1,26 +1,82 @@
 [
     {
         "figure_number": 1,
-        "label": "Transformer"
+        "label": "Tank External"
     },
     {
         "figure_number": 2,
-        "label": "Grounding"
+        "label": "Nameplate"
     },
     {
         "figure_number": 3,
-        "label": "Middle"
+        "label": "High Voltage Bushings"
     },
     {
         "figure_number": 4,
-        "label": "Oil Min"
+        "label": "Left Door"
     },
     {
         "figure_number": 5,
-        "label": "Stenciling"
+        "label": "Left Side"
     },
     {
         "figure_number": 6,
+        "label": "Loadbreak Fuses"
+    },
+    {
+        "figure_number": 7,
+        "label": "Loadbreak Switch & Tap Changer"
+    },
+    {
+        "figure_number": 8,
+        "label": "Low Voltage Bushings"
+    },
+    {
+        "figure_number": 9,
+        "label": "Notice Label"
+    },
+    {
+        "figure_number": 10,
+        "label": "Right Side"
+    },
+    {
+        "figure_number": 11,
+        "label": "Right Door"
+    },
+    {
+        "figure_number": 12,
+        "label": "Oil Fitting & Ifd"
+    },
+    {
+        "figure_number": 13,
+        "label": "Door Stand"
+    },
+    {
+        "figure_number": 14,
+        "label": "Oil Float"
+    },
+    {
+        "figure_number": 15,
+        "label": "Oil Valve"
+    },
+    {
+        "figure_number": 16,
+        "label": "Sill"
+    },
+    {
+        "figure_number": 17,
+        "label": "Temperature Gauge"
+    },
+    {
+        "figure_number": 18,
+        "label": "Temporary Barcode"
+    },
+    {
+        "figure_number": 19,
         "label": "Warning Labels"
+    },
+    {
+        "figure_number": 20,
+        "label": "Misc"
     }
 ]

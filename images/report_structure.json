@@ -1,37 +1,177 @@
 {
-    "Oil Min": [
+    "Sill": [
         {
-            "file": "Image (1).jpg",
+            "file": "054ef9e2-2f8d-413e-bf7d-516164f37cfd.jpg",
+            "sequence": 1
+        },
+        {
+            "file": "80cc375d-b5a5-4616-b1cf-1b0f40ee7652.jpg",
+            "sequence": 2
+        }
+    ],
+    "High Voltage Bushings": [
+        {
+            "file": "0e62819c-49b9-4fb7-82b4-4170de094d40.jpg",
+            "sequence": 1
+        },
+        {
+            "file": "439bd83e-e73b-400f-a380-87618e05c0c6.jpg",
+            "sequence": 2
+        },
+        {
+            "file": "95d15c70-298d-43a2-ab75-db6506197fd5.jpg",
+            "sequence": 3
+        },
+        {
+            "file": "b97a36c7-2fde-4830-8609-a5309465a75b.jpg",
+            "sequence": 4
+        },
+        {
+            "file": "f5e334cc-947c-46c5-af95-e6dc3c065320.jpg",
+            "sequence": 5
+        }
+    ],
+    "Oil Float": [
+        {
+            "file": "0e7a7c28-2798-427a-9236-ad329eb71946.jpg",
             "sequence": 1
         }
     ],
-    "Grounding": [
+    "Tank External": [
         {
-            "file": "Image (2).jpg",
+            "file": "138daf1d-1e27-46aa-81b0-c64f6a6d634c.jpg",
+            "sequence": 1
+        },
+        {
+            "file": "3445b821-abf8-4bff-8cd8-c0dedbef03d7.jpg",
+            "sequence": 2
+        },
+        {
+            "file": "7ce4ee81-2fbe-42d0-a771-902769f43a93.jpg",
+            "sequence": 3
+        },
+        {
+            "file": "88c3a5a1-447b-40d0-9cfc-0181282ea342.jpg",
+            "sequence": 4
+        },
+        {
+            "file": "b635f5cc-16ba-4fa1-bf57-c799614ff715.jpg",
+            "sequence": 5
+        },
+        {
+            "file": "e976dc05-d7c6-4e56-8d48-0d31e224b225.jpg",
+            "sequence": 6
+        }
+    ],
+    "Left Door": [
+        {
+            "file": "2ee89447-4032-425d-8f67-c885ddca4f53.jpg",
+            "sequence": 1
+        },
+        {
+            "file": "2f740281-eac9-4da8-a2bc-28357b5b9f8e.jpg",
+            "sequence": 2
+        },
+        {
+            "file": "6c139c4b-192b-417e-9de4-b3af0b7b50a3.jpg",
+            "sequence": 3
+        }
+    ],
+    "Oil Valve": [
+        {
+            "file": "312ae6e0-0430-49e6-a789-0d0fa109da16.jpg",
             "sequence": 1
         }
     ],
-    "Middle": [
+    "Loadbreak Fuses": [
         {
-            "file": "Image (3).jpg",
+            "file": "369acfdd-66af-41e7-87d1-3cffcec626cb.jpg",
             "sequence": 1
+        }
+    ],
+    "Low Voltage Bushings": [
+        {
+            "file": "4d97347d-8835-4b7d-acb2-5fece3183bff.jpg",
+            "sequence": 1
+        }
+    ],
+    "Misc": [
+        {
+            "file": "51ac91ae-5686-4522-8d7f-d4bccca9985b.jpg",
+            "sequence": 1
+        }
+    ],
+    "Right Door": [
+        {
+            "file": "54f0919e-a411-403c-b210-ef4f4c2fe867.jpg",
+            "sequence": 1
+        },
+        {
+            "file": "7f72cce7-877c-4152-959c-14c3ebb65a80.jpg",
+            "sequence": 2
+        },
+        {
+            "file": "f87919ec-75aa-4aea-a0a4-1d0c792ee0c4.jpg",
+            "sequence": 3
         }
     ],
     "Warning Labels": [
         {
-            "file": "Image.jpg",
+            "file": "68017f27-8416-4505-940b-5977405e70a3.jpg",
             "sequence": 1
         }
     ],
-    "Transformer": [
+    "Nameplate": [
         {
-            "file": "IMG_6367.JPG",
+            "file": "7c29ac12-71a2-43e4-b4eb-3fd020aa7358.jpg",
             "sequence": 1
         }
     ],
-    "Stenciling": [
+    "Temporary Barcode": [
         {
-            "file": "IMG_6368.JPG",
+            "file": "94d30004-598e-4f82-a5f8-11fce5547225.jpg",
+            "sequence": 1
+        }
+    ],
+    "Left Side": [
+        {
+            "file": "97add186-8dcf-485b-b9ab-5ce3e2aab6ad.jpg",
+            "sequence": 1
+        }
+    ],
+    "Oil Fitting & Ifd": [
+        {
+            "file": "d9840035-f83e-44c5-b061-edcd6817ce65.jpg",
+            "sequence": 1
+        }
+    ],
+    "Right Side": [
+        {
+            "file": "da5cd0a0-ae31-4604-afbe-87d747220022.jpg",
+            "sequence": 1
+        }
+    ],
+    "Temperature Gauge": [
+        {
+            "file": "da7b50d4-6a8f-4fc4-b580-5af3085d6f2a.jpg",
+            "sequence": 1
+        }
+    ],
+    "Notice Label": [
+        {
+            "file": "ddc23bda-410e-4272-ba40-4c228266bacd.jpg",
+            "sequence": 1
+        }
+    ],
+    "Door Stand": [
+        {
+            "file": "f01b8fb8-b6f0-44c0-bb9b-3a191ff18194.jpg",
+            "sequence": 1
+        }
+    ],
+    "Loadbreak Switch & Tap Changer": [
+        {
+            "file": "fdff6174-155a-4c7e-aa13-45fcbc1e64f4.jpg",
             "sequence": 1
         }
     ]

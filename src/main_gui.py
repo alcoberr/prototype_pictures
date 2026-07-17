@@ -10,12 +10,44 @@ from ui.review_frame import ReviewFrame
 from ui.label_order_frame import LabelOrderFrame
 from ui.page_planner_frame import PagePlannerFrame
 
+import sys
+from pathlib import Path
+import shutil
+
+def resource_path(relative_path):
+
+    try:
+
+        base_path = Path(
+            sys._MEIPASS
+        )
+
+    except Exception:
+
+        base_path = Path(
+            __file__
+        ).resolve().parent
+
+    return base_path / relative_path
 
 class MainGUI:
 
+
+
     def __init__(self, root):
 
+        self.workspace_folder = (
+            Path.home()
+            / "PictureReportWorkspace"
+        )
         self.root = root
+
+        self.root.protocol(
+            "WM_DELETE_WINDOW",
+            self.on_application_close
+        )
+
+        
 
         self.root.title(
             "Picture Report Generator"
@@ -31,15 +63,113 @@ class MainGUI:
         )
 
         self.project_folder = None
+        self.active_folder = None
 
         self.ralph_image = None
         self.original_logo = None
 
         self.build_ui()
 
+    def on_application_close(self):
+
+        try:
+
+            self.sync_workspace_to_project()
+
+        except Exception as ex:
+
+            print(
+                "Sync error:",
+                ex
+            )
+
+        self.root.destroy()
     # ======================================
     # UI
     # ======================================
+
+    def sync_workspace_to_project(self):
+
+        if not self.project_folder:
+            return
+
+        files_to_sync = [
+            "labels.json",
+            "report_structure.json",
+            "label_order.json",
+            "page_plan.json",
+            "Prototype_Report.xlsx"
+        ]
+
+        for filename in files_to_sync:
+
+            source = (
+                self.workspace_folder /
+                filename
+            )
+
+            destination = (
+                self.project_folder /
+                filename
+            )
+
+            if source.exists():
+
+                shutil.copy2(
+                    source,
+                    destination
+                )
+
+    def load_project_to_workspace(
+    self,
+    source_folder
+):
+
+        self.workspace_folder.mkdir(
+            exist_ok=True
+        )
+
+        for item in self.workspace_folder.iterdir():
+
+            if item.is_file():
+
+                item.unlink()
+
+        image_extensions = {
+            ".jpg",
+            ".jpeg",
+            ".png",
+            ".bmp",
+            ".tif",
+            ".tiff",
+            ".webp"
+        }
+
+        project_files = {
+            "labels.json",
+            "report_structure.json",
+            "label_order.json",
+            "page_plan.json",
+            "Prototype_Report.xlsx"
+        }
+
+        for file in source_folder.iterdir():
+
+            if (
+                file.is_file()
+                and
+                (
+                    file.suffix.lower() in image_extensions
+                    or
+                    file.name in project_files
+                )
+            ):
+
+                shutil.copy2(
+                    file,
+                    self.workspace_folder /
+                    file.name
+                )
 
     def build_ui(self):
 
@@ -226,9 +356,8 @@ class MainGUI:
 
         try:
 
-            logo_path = (
-                Path(__file__).resolve().parent
-                / "ralph.png"
+            logo_path = resource_path(
+                "ralph.png"
             )
 
             if logo_path.exists():
@@ -311,6 +440,8 @@ class MainGUI:
 
     def show_dashboard(self):
 
+        self.sync_workspace_to_project()
+
         self.clear_content()
 
         frame = ttk.Frame(
@@ -375,10 +506,16 @@ class MainGUI:
 
         for filename in checks:
 
-            exists = (
-                self.project_folder /
-                filename
-            ).exists()
+            if self.active_folder:
+
+                exists = (
+                    self.active_folder /
+                    filename
+                ).exists()
+
+            else:
+
+                exists = False
 
             icon = (
                 "✅"
@@ -409,7 +546,7 @@ class MainGUI:
 
         LabelerFrame(
             self.content,
-            self.project_folder
+            self.active_folder
         ).pack(
             fill="both",
             expand=True
@@ -424,7 +561,7 @@ class MainGUI:
 
         ReviewFrame(
             self.content,
-            self.project_folder
+            self.active_folder
         ).pack(
             fill="both",
             expand=True
@@ -439,7 +576,7 @@ class MainGUI:
 
         LabelOrderFrame(
             self.content,
-            self.project_folder
+            self.active_folder
         ).pack(
             fill="both",
             expand=True
@@ -454,7 +591,7 @@ class MainGUI:
 
         PagePlannerFrame(
             self.content,
-            self.project_folder
+            self.active_folder
         ).pack(
             fill="both",
             expand=True
@@ -468,9 +605,10 @@ class MainGUI:
         try:
 
             output_file = jayjay.main(
-                self.project_folder,
+                self.active_folder,
                 self.serial_number_var.get().strip()
             )
+            self.sync_workspace_to_project()
 
             self.show_dashboard()
 
@@ -503,8 +641,16 @@ class MainGUI:
         if not folder:
             return
 
-        self.project_folder = (
-            Path(folder)
+        self.project_folder = Path(
+            folder
+        )
+
+        self.load_project_to_workspace(
+            self.project_folder
+        )
+
+        self.active_folder = (
+            self.workspace_folder
         )
 
         self.folder_label.config(
