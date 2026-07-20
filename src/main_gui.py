@@ -3,6 +3,9 @@ from tkinter import ttk, filedialog
 from pathlib import Path
 import jayjay
 
+import mimetypes
+
+import traceback
 import threading
 from tkinter import messagebox
 
@@ -16,6 +19,11 @@ from ui.page_planner_frame import PagePlannerFrame
 import sys
 from pathlib import Path
 import shutil
+
+mimetypes.add_type(
+    "image/jpeg",
+    ".mpo"
+)
 
 def resource_path(relative_path):
 
@@ -474,7 +482,7 @@ class MainGUI:
                 width,
                 height
             ),
-            Image.Resampling.LANCZOS
+            Image.LANCZOS
         )
 
         self.ralph_image = (
@@ -699,13 +707,10 @@ class MainGUI:
                     output_file
                 )
             )
-
         except Exception as ex:
-
-            print(
-                "EXPORT FAILED:",
-                ex
-            )
+            print("\n===== EXPORT ERROR =====")
+            traceback.print_exc()
+            print("========================\n")
 
             self.root.after(
                 0,

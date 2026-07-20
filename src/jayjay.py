@@ -2,11 +2,19 @@ import json
 from pathlib import Path
 from copy import copy
 
+
 from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
 
 import sys
 from pathlib import Path
+
+import mimetypes
+
+mimetypes.add_type(
+    "image/jpeg",
+    ".mpo"
+)
 
 
 def resource_path(relative_path):
@@ -132,12 +140,18 @@ def add_image(
         image_file
     )
 
+    print(
+        "Adding image:",
+        image_path
+    )
+
     if not image_path.exists():
         return
 
     img = Image(
         str(image_path)
     )
+    img.format = "jpeg"
 
     fit_image(img)
 
@@ -145,8 +159,6 @@ def add_image(
         img,
         anchor
     )
-
-
 def render_single_section(
     ws,
     placeholders,
@@ -477,6 +489,42 @@ def main(project_folder=None, serial_number=""):
         IMAGE_FOLDER /
         "Prototype_Report.xlsx"
     )
+
+    import zipfile
+
+    for sheet in wb.worksheets:
+        print(sheet.title)
+
+    print("SAVING WORKBOOK")
+
+    for ws in wb.worksheets:
+
+        if hasattr(ws, "_images"):
+
+            for img in ws._images:
+
+                print(
+                    "IMAGE REF:",
+                    img.ref
+                )
+    for ws in wb.worksheets:
+
+        for img in getattr(ws, "_images", []):
+
+            print("REF:", img.ref)
+
+            try:
+                print("PATH:", img.path)
+            except:
+                pass
+
+            try:
+                print("FORMAT:", img.format)
+            except:
+                pass
+
+            print("---")
+
 
     wb.save(
         output_file
